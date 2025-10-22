@@ -1,0 +1,32 @@
+<!doctype html><html lang="fa" dir="rtl"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>مسیر شعبه ۱ (ترکیبی)</title>
+<script>
+  (function() {
+    var dynamicUrl = 'https://maps.app.goo.gl/PSEVcjdSy89VjTi56';
+    var fallbackUrl = 'https://www.google.com/maps/dir/?api=1&destination=29.103784485084635,58.3659182915528';
+    // Try dynamic first
+    try {
+      window.location.replace(dynamicUrl);
+      // Safety timer: if dynamic fails within 800ms, go fallback
+      setTimeout(function() {
+        window.location.replace(fallbackUrl);
+      }, 800);
+    } catch(e) {
+      // If any error, go fallback immediately
+      window.location.replace(fallbackUrl);
+    }
+  })();
+</script>
+<noscript>
+  جاوااسکریپت غیر فعال است. برای ادامه یکی را انتخاب کنید:
+  <ul>
+    <li><a href="https://maps.app.goo.gl/PSEVcjdSy89VjTi56">لینک داینامیک</a></li>
+    <li><a href="https://www.google.com/maps/dir/?api=1&destination=29.103784485084635,58.3659182915528">لینک پایدار</a></li>
+  </ul>
+</noscript>
+</head><body>
+در حال انتقال... اگر منتقل نشدید
+<a href="https://maps.app.goo.gl/PSEVcjdSy89VjTi56">داینامیک</a> یا
+<a href="https://www.google.com/maps/dir/?api=1&destination=29.103784485084635,58.3659182915528">پایدار</a> را لمس کنید.
+</body></html>
